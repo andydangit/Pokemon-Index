@@ -1,11 +1,8 @@
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <div> Pokemon Index</div>
-    </div>
-  );
+  return <Navbar />;
 }
 
 export default App;
