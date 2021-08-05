@@ -29,3 +29,18 @@
   padding: 7px;
 }
 
+/* highlight About page  */
+.box{
+  color: #f2f2f2;
+  background-Color: #f1356d;
+  border: solid;
+  border-Radius: 9px;
+}
+
+/* About page  */
+.Home h1,
+.About h1{
+  color: #181818;
+  margin: 20px;
+}
+
