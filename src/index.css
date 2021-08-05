@@ -44,3 +44,8 @@
   margin: 20px;
 }
 
+
+.pokemons{
+  display: flex;
+
+}
