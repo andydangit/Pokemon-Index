@@ -7,7 +7,7 @@ const Navbar = () => {
             <h1> Pokemon Index </h1> 
             <div className="links">
                 <Link  to="/"> Home </Link>
-                <Link className="box" to="/about"> About</Link>
+                <Link className="box" to="/About"> About</Link>
                 </div> 
         </nav>
      );

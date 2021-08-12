@@ -9,11 +9,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <div className="content">
          <Switch>
            <Route exact path="/"> 
-              <PokeDetail />
+              <Home />
            </Route>
            <Route path="/about"> 
               <About />
