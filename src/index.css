@@ -11,8 +11,10 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  border-bottom: 1px solid #f2f2f2;
+  max-width: auto;
+  /* border-bottom: 1px solid #f2f2f2; */
+  background-color: #ffde00;
+  height: 30px;
 }
 
 .navbar h1{
