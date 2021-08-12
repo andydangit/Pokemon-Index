@@ -5,6 +5,7 @@ function Search() {
     return (
         <div className="Search">
             <input type='text' /> 
+            <button>Pokemon Search</button> 
         </div>
     )
 }
