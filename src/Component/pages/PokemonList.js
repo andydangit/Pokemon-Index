@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -33,7 +34,7 @@ const useStyles = makeStyles({
   });
 
 
-const PokeDetail = () => {
+const PokemonList = () => {
     
     const { id } = useParams();
     const [ pokemons, , isError ] = useFetch('https://pokeapi.co/api/v2/pokemon?limit=9' + id );
@@ -63,4 +64,4 @@ const PokeDetail = () => {
       );
 }
  
-export default PokeDetail;
+export default PokemonList;

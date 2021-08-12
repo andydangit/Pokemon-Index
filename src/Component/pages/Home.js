@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../Navbar"
-import PokeDetail from './PokeDetail'
+import PokeDetail from './PokemonList'
 
 export default function Home() {
     return (
