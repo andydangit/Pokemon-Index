@@ -4,15 +4,16 @@ import axios from "axios";
 
 function Search() {
   const [pokemonName, setPokemonName] = useState("");
+  const [pokemonChosen, setPokemonChosen] = useState(false);
 
   const [pokemon, setPokemon] = useState({
-      name: "",
-      species: "",
-      img: "",
-      hp: "",
-      attack: "",
-      defense: "",
-      type: "",
+    name: "",
+    species: "",
+    img: "",
+    hp: "",
+    attack: "",
+    defense: "",
+    type: "",
   });
 
   const searchPokemon = () => {
@@ -27,9 +28,8 @@ function Search() {
           attack: response.data.stats[1].base_stat,
           defense: response.data.stats[2].base_stat,
           type: response.data.types[0].type.name,
-
-          
         });
+        setPokemonChosen(true);
       });
   };
 
@@ -43,9 +43,12 @@ function Search() {
       />
       <button onClick={searchPokemon}>Pokemon Search</button>
 
-      <div className="display"> 
-
-
+      <div className="display">
+        {!pokemonChosen ? (
+          <h1> Please pick a Pokemon </h1>
+        ) : (
+          <h1> {pokemonName} </h1>
+        )}
       </div>
     </div>
   );
