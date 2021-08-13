@@ -41,6 +41,9 @@ const PokemonList = () => {
               </CardContent>
             </CardActionArea>
           </Card>
+          <div className="footer"> 
+
+          </div>
 
       </div>
       );
