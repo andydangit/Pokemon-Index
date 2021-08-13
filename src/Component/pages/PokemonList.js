@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 import "./PokemonList.css";
+import ash from '../../img/ash_pikachu.png'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -12,29 +13,26 @@ import Typography from '@material-ui/core/Typography';
  
 const useStyles = makeStyles({
     root: {
-      maxWidth: 345,
+      maxWidth: 320,
     },
     media: {
       height: 250,
+      width: 210,
     },
   });
 
 
 const PokemonList = () => {
-    
-    const { id } = useParams();
-    const [ pokemons, , isError ] = useFetch('https://pokeapi.co/api/v2/pokemon?limit=1' + id );
-    
-    const classes = useStyles();
 
+        const classes = useStyles();
     
     return (
         <div className="pokemons">
-          <Card className={classes.root} >
+          <Card className="enter">
             <CardActionArea href="">
               <CardMedia
                 className={classes.media}
-                image="img\ash_pikachu.png"
+                image={ash}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
@@ -43,6 +41,7 @@ const PokemonList = () => {
               </CardContent>
             </CardActionArea>
           </Card>
+
       </div>
       );
 }

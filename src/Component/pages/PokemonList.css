@@ -1,5 +1,4 @@
 
-
 .pokemons{
     display: flex;
     flex-direction: column;
@@ -9,3 +8,16 @@
   
   }
 
+.pokemons image{
+ height: au
+}
+
+.enter{ 
+width: 240px;
+margin-left: 150px;
+margin-top: 30px;
+}
+
+.logo-gif{
+  margin-right: 350px;
+}
